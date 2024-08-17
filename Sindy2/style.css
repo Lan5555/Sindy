@@ -334,8 +334,13 @@ padding: 10px;
 }
 .pages{
   position: absolute;
-  bottom:15px;
+  bottom:1px;
   margin: 10px;
+}
+.pages h6{
+  position: fixed;
+  bottom:1px;
+  right:20px;
 }
 .pages button{
   box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
