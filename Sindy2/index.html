@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sindy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="sidebar">
+     <h1>Menu</h1>
+     <div class="itemP">
+    <a onclick="Home()"><img src = "icons/609803.png" class = "iconSize"> Home</a>
+    <a onclick="Diary()"><img src = "icons/3237849.png" class = "iconSize"> Edit diary</a>
+    <a onclick="Places()"><img src = "icons/1087434.png" class = "iconSize"> Edit favorites</a>
+    </div>
+   </div>
+   
+ <div class = "header">
+   <h1 class = "logo"><img src = "icons/1087434.png" class = "iconSize"> Sindy</h1>
+   <img class="iconSize message1" src = "icons/2190552.png" onclick = "message()">
+   <div class = "container">
+        <img src = "icons/4555444.png" class="iconSize" onclick= "toggleDisplay()" >
+   </div>
+ </div>
+ 
+ <div class = "content1">
+ <section>
+   <div class= "container1">
+
+  
+   
+   </div>
+ </section>
+ <section>
+   <h1 class = "favourite">Favorites</h1>
+   
+   <div class= "fav">
+     <table class="styled-table">
+       <thread>
+         <tr>
+         <th><img src = "icons/1037855.png" class = "iconSize"> Meals</th>
+         <th><img src = "icons/7429749.png" class = "iconSize"> Places</th>
+         <th><img src = "icons/2763444.png" class = "iconSize"> Fun centers</th>
+         </tr>
+       </thread>
+       <tbody class = "newItem">
+         <tr>
+           <td>Fried Rice</td>
+           <td>USA</td>
+           <td>Cinema</td>
+         </tr>
+         <tr>
+            <td>Potato chips</td>
+            <td>Jerusalem</td>
+            <td>Mall</td>
+         </tr>
+         
+       </tbody>
+     </table>
+   </div>
+ </section>
+ <section>
+   <h1 class = "dir" style="text-align: center">My diary</h1>
+   <div class = "dirWrapper">
+   <div class="icon">
+     <img src = "icons/Picsart_24-08-17_19-25-29-711.png" alt = "photo" class="dirSize">
+   </div>
+        <button class = "read" onclick="openDiary()">Read</button>
+        </div>
+   
+   </div>
+ </section>
+    <div class="diary">
+      <p class="note"></p>
+      <div class = "pages">
+      <h6 class = "pageDetails"></h6>
+      <button class = "next2" onclick = "next()">Next page <img src = "icons/3237849.png" class="iconSize3"></button>
+      </div>
+    </div>
+ <!---content-->
+ <div class = "content2">
+   <textarea class="text1" placeholder="Type here"></textarea>
+   <button class= "send" onclick="uploadDiary()">Save <img src = "icons/3682321.png" class="iconSize3"></button>
+   <button class = "clear" onclick = "clearDiary()">Clear Diary<img src = "icons/3221897.png" class="iconSize3"></button>
+ </div>
+ 
+ <div class= "content3">
+   <form onsubmit="setNewItem(event)">
+   <input class="first" type="text" placeholder="Meal" required><br><br>
+   <input class="second" type="text" placeholder="Places" required><br><br>
+   <input class="third" type="text" placeholder="Fun centers" required><br><br>
+   <button type = "submit">Save <img src = "icons/3682321.png" class="iconSize3"></button>
+   </form>
+   <br>
+   <button onclick="delete1()">Delete Records<img src = "icons/3221897.png" class="iconSize3"></button>
+ </div>
+ <div class="content4">
+   <div class = "memWrapper">
+        <p class = "myMessage"></p>
+   </div>
+ </div>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

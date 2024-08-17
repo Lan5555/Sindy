@@ -1,0 +1,391 @@
+.header{
+  height:40px;
+  width:95%;
+  margin:10px;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  padding: 5px;
+  
+}
+.logo{
+  margin-top: 5px;
+  text-align: left;
+  display: inline-block;
+  font-size: 25pt;
+  font-family: 'Brush Script MT', 'Lucida Handwriting',cursive;
+  background-image : url('grim-reaper-q8ewae6bw2e8oibw.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+ 
+}
+.container{
+  position: absolute;
+  top:22px;
+  right:15px;
+}
+.message1{
+  position: absolute;
+  top:22px;
+  right:19%;
+}
+.header button{
+    box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: blueviolet;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.header button:hover{
+  color:black;
+  background-color: gray;
+}
+
+.container1 {
+  display: flex;
+  justify-content: flex-start; /* Aligns cards to the start of the container */
+  align-items: center;
+  height: 50vh;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px; /* Padding around the container */
+  scroll-snap-type: x mandatory; /* Enables scroll snapping */
+}
+
+.card {
+  border-radius: 1px;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+  height: 300px;
+  width: 90%; /* 90% of the container width */
+  border: none;
+  flex-shrink: 0;
+  padding: 10px;
+  scroll-snap-align: start; /* Snaps card to start of the container */
+}
+.favourite{
+  text-align: center;
+  background-image : url('grim-reaper-q8ewae6bw2e8oibw.jpg');
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Brush Script MT', 'Lucida Handwriting',cursive;
+  width: 90%;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  margin: 10px;
+}
+.styled-table{
+  border-collapse: collapse;
+  text-align: left;    
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border:none;
+  width:95%;
+  margin: 10px;
+  
+}
+.styled-table th{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  color: black;
+  text-align: left;
+  height:30px;
+  padding: 10px;
+  font-family: 'playfair display',serif;
+}
+.styled-table tr,.styled-table td{
+  padding:10px;
+  font-size: 10pt;
+  border: 0.001px solid lightgrey;
+  text-align: left;
+    font-family: 'playfair display',serif;
+padding: 10px;
+}
+.card img{
+  width: 100%;
+  z-index:-1;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.sidebar{
+  width:50%;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  height: 100vh;
+  position:fixed;
+  left:-300px;
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.itemP{
+  display: grid;
+  margin: 10px;
+  padding:10px;
+  gap:10px;
+}
+.sidebar h1{
+  font-size: 25pt;
+  font-family: 'Brush Script MT', 'Lucida Handwriting',cursive;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-image : url('grim-reaper-q8ewae6bw2e8oibw.jpg');
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+.itemP a{
+  background-image : url('grim-reaper-q8ewae6bw2e8oibw.jpg');
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'playfair Display',serif;
+}
+.itemP a:hover{
+  text-decoration: underline;
+}
+.content1{
+  display: block;
+}
+.content2{
+  display: none;
+}
+.content3{
+  display: none;
+}
+.content4{
+  display: none;
+}
+.text1{
+  margin: 10px;
+  width:90%;
+  height:70vh;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border:none;
+  padding: 10px;
+    font-family: 'playfair Display',serif;
+  outline: none;
+}
+.send{
+  margin-left: 80%;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: blueviolet;
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+.clear{
+  margin-left: 65%;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: blueviolet;
+  color:white;
+  transition: all 0.5s ease-in-out;
+  margin-top: 15px;
+  width:100px;
+}
+.content3{
+  margin: 10px;
+}
+.content3 input{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  width: 90%;
+  padding: 10px;
+  border: none;
+  margin-top: 15px;
+  font-family: 'playfair Display',serif;
+  outline:none;
+}
+.content3 button{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  background-color: blueviolet;
+  color:white;
+  transition: all 0.5s ease-in-out;
+  
+}
+.content3 button:hover{
+  color:black;
+  background-color: gray;
+}
+.memWrapper{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  height: 80vh;
+  width:90%;
+  padding: 10px;
+  margin: 10px;
+  animation: slideIn 1s ease-in-out;
+}
+.myMessage{
+  font-family: 'Brush Script MT', 'Lucida Handwriting',cursive;
+  padding: 10px;
+  font-size: 19pt;
+  background-image : url('src/IMG-20240816-WA0008.jpg');
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 10s infinite;
+}
+
+@keyframes moveBg {
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@media only screen and (min-width: 542px) {
+  .content1::before,
+  .content2::before,
+  .content3::before,
+  .content4::before {
+    content: "This was developed for mobile please switch devices";
+    display: block; /* Ensure the content is displayed as a block */
+    color: white; /* Adjust styling as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: center;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    top:40%;
+    left:35%;
+    height:50px;
+    padding:10px;
+  }
+}
+.icon{
+  display: block;
+  margin:10px;
+  display: inline-block;
+}
+.dir{
+  background-image : url('grim-reaper-q8ewae6bw2e8oibw.jpg');
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Brush Script MT', 'Lucida Handwriting',cursive;
+  width: 90%;
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);  
+  margin: 10px;
+}
+.iconSize{
+  height:25px;
+  width:25px;
+}
+.container img{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  
+}
+.dirSize{
+  width: 150px;
+  height:150px;
+}
+.read{
+  margin-bottom:4%;
+  margin-right:35px;
+  background-color: pink;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color:black;
+  transition: all 0.5s ease-in-out;
+  width: 30%;
+}
+.read:hover{
+  color:black;
+  background-color: grey;
+}
+.dirWrapper{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border:none;
+  padding: 10px;
+  margin: 10px;
+}
+.diary{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  width: 90%;
+  margin: 10px;
+  padding:10px;
+  border:none;
+  height:70vh;
+  display: none;
+  animation: slideIn 1s ease;
+}
+.note{
+  font-family: 'playfair Display', serif;
+  font-size: 10pt;
+  background-image : url('src/IMG-20240816-WA0008.jpg');
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.pages{
+  position: absolute;
+  bottom:15px;
+  margin: 10px;
+}
+.pages button{
+  box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: blueviolet;
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+ .pages button:hover{
+   color:black;
+   background-color: grey;
+ }
+ .pages h6{
+   font-family:'playfair Display',serif;
+   box-shadow:0 0.15rem 1.75rem 0 rgba(33 40 50 / 15%);
+   padding: 10px;
+ }
+@keyframes slideIn{
+  from{
+    transform: translateX(-40px);
+  } to {
+    transform: translateX(0px);
+  }
+}
+.iconSize3{
+  width: 14px;
+  height: 14px;
+}
+.introjs-tooltip {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15%);
+  border: none;
+}
+
+.introjs-tooltiptext {
+  font-family: 'Playfair Display', serif;
+  background-image: url('src/IMG-20240816-WA0008.jpg');
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation:moveBg 10s infinite;
+}
+
+.introjs-title {
+  background-image: url('grim-reaper-q8ewae6bw2e8oibw.jpg');
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+}
