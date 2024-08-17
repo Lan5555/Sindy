@@ -308,7 +308,8 @@ function intro(){
       ],
       showBullets:true,
       exitOnOverlayClick:false,
-      exitOnEsc:false
+      exitOnEsc:false,
+      disableInteraction:true
   }).start();
   localStorage.setItem("done",true);
 }
